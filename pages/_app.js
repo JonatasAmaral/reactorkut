@@ -1,4 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { ReactorkutStyles } from "../src/lib/ReactorkutCommons";
+
 
 const GlobalStyle = createGlobalStyle`
 	* {
@@ -24,6 +26,8 @@ const GlobalStyle = createGlobalStyle`
 		height: auto;
 		display: block;
 	}
+
+	${ReactorkutStyles}
 `;
 
 const theme = {
